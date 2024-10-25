@@ -1,0 +1,12 @@
+.buildLink {
+  display: flex;
+  padding: 8px;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 8px;
+  color: inherit;
+  font-size: medium;
+}
+.linkActive {
+  color: rgb(192, 18, 18);
+}
