@@ -1,8 +1,13 @@
 import css from "./Contact.module.css";
 import { FaUser } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { useDispatch } from "react-redux";
 
-export default function Contact({ contact, onDeleteContact }) {
+export default function Contact({ contact }) {
+  const dispatch = useDispatch();
+  const onDeleteContact = (contactId) => {
+    dispatch(onDeleteContact(contactId));
+  };
   return (
     <div className={css.contactBox}>
       <div>
